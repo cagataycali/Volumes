@@ -1,6 +1,6 @@
 {
   "name": "volumes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Ubuntu Volume Change",
   "main": "index.js",
   "scripts": {
