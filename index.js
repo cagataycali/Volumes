@@ -6,14 +6,6 @@ var pkg = require('./package.json');
 var os = require('os');
 var osxVol = require('osx-vol');
 
-var sayi = 50;
-console.log(typeof sayi);
-console.log(`0.${Math.floor(sayi/10)}`);
-var i = `0.${Math.floor(sayi/10)}`;
-console.log(typeof i);
-
-console.log(parseFloat(i));
-
 updateNotifier({pkg}).notify();
 module.exports = {
   set: function(to) {
