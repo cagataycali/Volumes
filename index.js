@@ -18,7 +18,7 @@ module.exports = {
         if (to === 100) {
           volume = 1;
         } else {
-          volume = parseFloat(`0.${Math.floor(to / 10)}`);
+          volume = Number(`0.${Math.floor(to / 10)}`);
         }
         osxVol.set(volume).then(function () {
             console.log(`Changed volume level to ${to}%`);
