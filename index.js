@@ -12,11 +12,11 @@ module.exports = {
     return new Promise(function (resolve, reject) {
       if (os.type() === 'Darwin') {
         osxVol.get().then(function(level) {
-            console.log(level);
+            console.log('Before volume: ',level);
         });
         var volume = parseFloat(`0.${Math.floor(to / 10)}`);
         osxVol.set(volume).then(function () {
-            console.log('Changed volume level to ${to}%');
+            console.log(`Changed volume level to ${to}%`);
         });
       } else {
         exec(`amixer -D pulse sset Master ${to}%`, (error, stdout, stderr) => {
