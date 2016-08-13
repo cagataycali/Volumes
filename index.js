@@ -14,7 +14,12 @@ module.exports = {
         osxVol.get().then(function(level) {
             console.log('Before volume: ',level);
         });
-        var volume = parseFloat(`0.${Math.floor(to / 10)}`);
+        var volume;
+        if (to === 100) {
+          volume = 1;
+        } else {
+          volume = parseFloat(`0.${Math.floor(to / 10)}`);
+        }
         osxVol.set(volume).then(function () {
             console.log(`Changed volume level to ${to}%`);
         });
