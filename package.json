@@ -1,0 +1,31 @@
+{
+  "name": "volumes",
+  "version": "1.0.0",
+  "description": "Ubuntu Volume Change",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccali14/Volumes.git"
+  },
+  "keywords": [
+    "ubuntu",
+    "sound",
+    "npm",
+    "cli",
+    "npm",
+    "volume",
+    "ubuntu"
+  ],
+  "author": "Çağatay Çalı",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccali14/Volumes/issues"
+  },
+  "homepage": "https://github.com/ccali14/Volumes#readme",
+  "dependencies": {
+    "async": "^2.0.1"
+  }
+}
