@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 var exec = require('child_process').exec;
 var async = require('async');
+var updateNotifier = require('update-notifier');
+var pkg = require('./package.json');
 
+updateNotifier({pkg}).notify();
 module.exports = {
   set: function(to) {
     return new Promise(function (resolve, reject) {
