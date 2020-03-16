@@ -28,6 +28,6 @@
   "dependencies": {
     "async": "^2.0.1",
     "osx-vol": "^2.0.0",
-    "update-notifier": "^1.0.2"
+    "update-notifier": "^2.0.0"
   }
 }
